@@ -12,7 +12,6 @@ if (chevron) {
     });
   });
 }
-
 // Finding input in the document
 let fields = [
   document.getElementsByTagName('input'),
