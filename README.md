@@ -1,1 +1,1 @@
-# noroff-workflow2-ca
+# Noroff FEU - Workflow 2 Course Assignment
