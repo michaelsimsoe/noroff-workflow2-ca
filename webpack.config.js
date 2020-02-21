@@ -6,5 +6,6 @@ module.exports = {
       title: 'Webpack demo'
     })
   ],
+
   devServer: {}
 };

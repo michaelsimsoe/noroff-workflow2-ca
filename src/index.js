@@ -1,3 +1,4 @@
+import './scss/main.scss';
 const nav = document.querySelector('#navigation');
 
 const chevron = document.querySelector('a.intro__chevron-wrapper-anchor');

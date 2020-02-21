@@ -21,7 +21,7 @@
 ***************************/
 :root {
   --main-color: #008670;
-  --light-green-color: #7FA716;
+  --light-green-color: #7fa716;
   --red-color: rgb(241, 92, 34);
   --bcg-color: rgba(0, 134, 112, 0.08);
 }
@@ -29,9 +29,9 @@
 /* Utils
 ***************************/
 .clearfix:after {
-  content: "";
+  content: '';
   display: table;
-  clear:both;
+  clear: both;
 }
 .wrapper {
   margin: 0 15px;
@@ -61,25 +61,29 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   background-color: var(--bcg-color);
   font-size: 1.8rem;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Lustria', serif;
 }
 
 figure {
   margin: 0;
 }
-
 
 /* Header
 ***************************/
@@ -173,10 +177,7 @@ figure {
   text-align: center;
 }
 
-
-
 @media only screen and (min-width: 410px) {
-
   .main-nav a:not(:last-of-type) {
     border-right: 1px solid #006353;
   }
@@ -192,28 +193,33 @@ figure {
   }
 }
 
-
 /***********************************
   1. Home
 ************************************/
 /* HOME intro */
 
 .intro {
-  background: linear-gradient(-45deg, rgba(0, 99, 83, .8), rgba(127, 167, 22, .5), rgba(0, 134, 112, .5), rgba(241, 92, 34, .8));
-	background-size: 400% 400%;
-	animation: gradient-bcg 8s ease infinite;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 99, 83, 0.8),
+    rgba(127, 167, 22, 0.5),
+    rgba(0, 134, 112, 0.5),
+    rgba(241, 92, 34, 0.8)
+  );
+  background-size: 400% 400%;
+  animation: gradient-bcg 8s ease infinite;
 }
 
 @keyframes gradient-bcg {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .intro__quote {
@@ -306,11 +312,11 @@ figure {
   .intro__chevron-wrapper-anchor {
     display: block;
     color: var(--main-color);
-    animation-duration: .9s;
+    animation-duration: 0.9s;
     animation-name: point;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transition: all .7s linear;
+    transition: all 0.7s linear;
   }
 
   .intro__chevron-wrapper-anchor:hover {
@@ -340,7 +346,8 @@ figure {
 
 /* HOME stories */
 
-.intro__sub-stories figure, .intro__sub-stories img {
+.intro__sub-stories figure,
+.intro__sub-stories img {
   max-width: 100%;
 }
 
@@ -355,7 +362,7 @@ figure {
 
 .sub-story__text {
   color: #ffffff;
-  background-color: rgba(0,134,112,0.7);
+  background-color: rgba(0, 134, 112, 0.7);
   top: 5px;
   position: absolute;
   width: 45%;
@@ -374,17 +381,18 @@ figure {
 
 @media only screen and (min-width: 410px) {
   .intro__sub-stories {
-    margin: 0 15px;;
+    margin: 0 15px;
   }
 
-  .intro__sub-stories figure, .intro__sub-stories img {
+  .intro__sub-stories figure,
+  .intro__sub-stories img {
     min-width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .intro__sub-stories, 
-  .intro__sub-stories-cta, 
+  .intro__sub-stories,
+  .intro__sub-stories-cta,
   .intro__mission {
     margin: 0 100px;
   }
@@ -394,7 +402,7 @@ figure {
   .intro__sub-stories-cta {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
   .intro__sub-stories {
     display: flex;
@@ -427,7 +435,7 @@ figure {
     min-width: 100%;
     min-height: 100%;
     opacity: 0;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
   }
 
   .sub-story__text:hover {
@@ -455,7 +463,6 @@ figure {
     display: flex;
     flex-grow: 1.5;
     flex-direction: column;
-    margin:
   }
 
   /* To overrid the wrapper class */
@@ -481,14 +488,13 @@ figure {
 
   .intro__sub-stories-cta {
     margin: 20px 0 20px 200px;
-    align-items: start;  
+    align-items: start;
   }
 
   .sub-story {
     max-width: 49%;
     position: relative;
   }
-
 }
 
 /* HOME reviews */
@@ -498,7 +504,8 @@ figure {
   box-shadow: 0px 1px 0px 1px rgba(52, 52, 52, 0.4);
 }
 
-.reviews figure, .reviews img {
+.reviews figure,
+.reviews img {
   max-width: 100%;
 }
 
@@ -509,7 +516,7 @@ figure {
 
 .review__text {
   bottom: 5px;
-  background-color: rgba(0,134,112,0.7);
+  background-color: rgba(0, 134, 112, 0.7);
   color: #ffffff;
   margin: 0;
   padding: 0 15px;
@@ -529,7 +536,8 @@ figure {
     margin: 0 15px;
   }
 
-  .reviews figure, .reviews img {
+  .reviews figure,
+  .reviews img {
     min-width: 100%;
   }
 }
@@ -568,7 +576,8 @@ figure {
     margin: 5px;
   }
 
-  .reviews figure, .reviews img {
+  .reviews figure,
+  .reviews img {
     height: 100%;
     object-fit: cover;
   }
@@ -608,7 +617,8 @@ figure {
     max-width: 100%;
   }
 
-  .reviews figure, .reviews img {
+  .reviews figure,
+  .reviews img {
     min-width: 0;
     max-width: 100%;
   }
@@ -641,7 +651,7 @@ figure {
   /* https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
   -webkit-scroll-snap-type: x mandatory;
   -ms-scroll-snap-type: x mandatory;
-  scroll-snap-type:  x mandatory;
+  scroll-snap-type: x mandatory;
   margin: 0 auto;
 }
 
@@ -674,7 +684,7 @@ figure {
   color: #ffffff;
   display: inline-block;
   font-size: 2rem;
-  margin-top: 20px; 
+  margin-top: 20px;
   padding: 8px;
   text-decoration: none;
   box-shadow: 0px 1px 0px 1px rgba(52, 52, 52, 0.4);
@@ -764,7 +774,6 @@ figure {
   }
 }
 
-
 @media only screen and (min-width: 1024px) {
   .cta__story {
     display: block;
@@ -791,7 +800,7 @@ figure {
     justify-content: space-between;
     -webkit-scroll-snap-type: none;
     -ms-scroll-snap-type: none;
-    scroll-snap-type:  none;
+    scroll-snap-type: none;
   }
 
   .cta__tour {
@@ -805,7 +814,7 @@ figure {
     border-radius: 4px;
     padding: 5px;
     text-align: center;
-    box-shadow: .5px 1px .5px 1px rgba(52, 52, 52, 0.4);
+    box-shadow: 0.5px 1px 0.5px 1px rgba(52, 52, 52, 0.4);
     display: flex;
     flex-direction: column;
   }
@@ -846,7 +855,8 @@ figure {
   max-width: 400px;
   margin: 20px 10px;
 }
-.tour figure, .tour img {
+.tour figure,
+.tour img {
   max-width: 100%;
 }
 
@@ -855,35 +865,35 @@ figure {
   border-radius: 2px;
   color: #ffffff;
   font-size: 2rem;
-  margin-top: 5px; 
+  margin-top: 5px;
   padding: 8px;
 }
 
 @media only screen and (min-width: 768px) {
-  .main-content .map{
+  .main-content .map {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
   }
 
   .main-content figcaption {
-     margin: 0 auto;
+    margin: 0 auto;
   }
 
   .main-content .map__small {
     display: block;
-     margin: 10px auto;
+    margin: 10px auto;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-   .main-content .map__small {
+  .main-content .map__small {
     display: none;
   }
 
   .main-content .map__medium {
     display: block;
-     margin: 10px auto;
+    margin: 10px auto;
   }
 }
 
@@ -891,14 +901,18 @@ figure {
   3. About
 ************************************/
 
-.about figure, .about img {
+.about figure,
+.about img {
   max-width: 100%;
 }
 
 /***********************************
   4. Contact
 ************************************/
-form input, form label, form span, form button {
+form input,
+form label,
+form span,
+form button {
   display: block;
 }
 
@@ -906,7 +920,6 @@ form input {
   min-width: 210px;
   min-height: 40px;
   box-shadow: 0;
-
 }
 
 form textarea {
@@ -922,7 +935,7 @@ form button {
   border-radius: 2px;
   color: #ffffff;
   font-size: 2rem;
-  margin-top: 45px; 
+  margin-top: 45px;
   padding: 8px;
 }
 
@@ -930,9 +943,10 @@ form button {
   margin-top: 20px;
 }
 
-.contact-form input, .contact-form textarea {
-  background-color: rgba(0,134,112,0.1);
-  border: 1px rgb(0,134,112) solid;
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(0, 134, 112, 0.1);
+  border: 1px rgb(0, 134, 112) solid;
   padding: 3px;
   font-size: 1.8rem;
   margin-bottom: 0;
@@ -958,13 +972,12 @@ form button {
   color: #eeaf03;
 }
 
-
 @media only screen and (min-width: 1024px) {
   .contact-form figure {
     display: block;
     float: right;
   }
-  
+
   .contact-form form {
     float: left;
   }
@@ -1003,13 +1016,13 @@ form button {
 }
 
 @media only screen and (min-width: 500px) {
-  .main-footer .wrapper{
+  .main-footer .wrapper {
     margin-left: 85px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .main-footer .wrapper{
+  .main-footer .wrapper {
     display: flex;
     flex-direction: row;
     align-content: center;
