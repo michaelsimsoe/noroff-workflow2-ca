@@ -1,11 +1,15 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
+const commonConfig = require('./config/webpack.common');
+const modeConfig = env => require(`./config/webpack.${env}`)(env);
 
-module.exports = {
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Webpack demo'
-    })
-  ],
-
-  devServer: {}
-};
+module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) =>
+  webpackMerge(
+    {
+      mode,
+      plugins: []
+    },
+    commonConfig,
+    modeConfig(mode)
+  );

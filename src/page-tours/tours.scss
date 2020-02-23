@@ -1,0 +1,63 @@
+.main-content .map {
+  display: none;
+}
+
+.main-content .map__small {
+  display: none;
+}
+
+.main-content .map__medium {
+  display: none;
+}
+
+.tours {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.tour {
+  max-width: 400px;
+  margin: 20px 10px;
+}
+.tour figure,
+.tour img {
+  max-width: 100%;
+}
+
+.tour button {
+  background-color: var(--red-color);
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content .map {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .main-content figcaption {
+    margin: 0 auto;
+  }
+
+  .main-content .map__small {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-content .map__small {
+    display: none;
+  }
+
+  .main-content .map__medium {
+    display: block;
+    margin: 10px auto;
+  }
+}

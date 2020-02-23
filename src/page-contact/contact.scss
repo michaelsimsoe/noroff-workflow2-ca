@@ -1,0 +1,79 @@
+form input,
+form label,
+form span,
+form button {
+  display: block;
+}
+
+form input {
+  min-width: 210px;
+  min-height: 40px;
+  box-shadow: 0;
+}
+
+form textarea {
+  max-width: 100%;
+}
+
+.label_help-text {
+  font-size: 1.2rem;
+}
+
+form button {
+  background-color: var(--red-color);
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 45px;
+  padding: 8px;
+}
+
+.contact-form label {
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(0, 134, 112, 0.1);
+  border: 1px rgb(0, 134, 112) solid;
+  padding: 3px;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.contact-form figure {
+  display: none;
+}
+
+.contact-error-message {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: tomato;
+}
+
+.invalid + .contact-error-message {
+  display: block;
+}
+
+.contact-error-message::first-letter {
+  color: #eeaf03;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-form figure {
+    display: block;
+    float: right;
+  }
+
+  .contact-form form {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  form textarea {
+    min-width: 350px;
+  }
+}
