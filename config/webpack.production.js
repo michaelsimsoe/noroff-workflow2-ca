@@ -1,5 +1,3 @@
-const path = require('path');
-const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
